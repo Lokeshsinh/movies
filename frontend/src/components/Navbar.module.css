@@ -1,0 +1,113 @@
+.navbar {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.navbarHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.navbarLogo {
+    margin-top: 10px;
+    width: 90px;
+    height: 100px;
+}
+
+.navbarLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbarHeading input {
+    padding: 13px 50px;
+    width: 480px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    background: rgba(128, 128, 128, 0.344);
+    border: none;
+    outline: none;
+
+
+}
+
+.navbarHeading input::placeholder {
+    color: rgba(255, 255, 255, 0.53);
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.searchIcon {
+    position: relative;
+    left: 40px;
+    top: 5px;
+    width: 22px;
+    height: 22px;
+
+}
+
+
+.navBell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navBellFlex {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.344);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navBellIcon {
+    width: 22px;
+    height: 22px;
+}
+
+
+.navPorfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.navImage {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.navImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.navPorfile p {
+    font-size: 15px;
+}
+
+.navArrow {
+    width: 17px;
+    height: 17px;
+}
