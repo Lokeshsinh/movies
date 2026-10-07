@@ -47,72 +47,27 @@ function Sidebar() {
 
     return (
         <aside className={styles.sidebar}>
-            {/* Main Menu */}
-            <div className={styles.menuSection}>
-                {menuItems.map((item) => {
-                    const Icon = item.icon;
-                    const isActive = activeItem === item.name;
+            <div className={styles.sideWidth}>
 
-                    return (
-                        <button
-                            key={item.name}
-                            className={`${styles.menuItem} ${isActive ? styles.active : ""
-                                }`}
-                            onClick={() => setActiveItem(item.name)}
-                        >
-                            <span className={styles.activeLine}></span>
+                <div className={styles.sideOne}>
+                    {menuItems.map((item, index) => {
+                        const Icon = item.icon
+                        return (
+                            <div key={index} className={styles.sidePages}><Icon className={styles.sideIcons} /></div>
+                        )
 
-                            <span className={styles.iconBox}>
-                                <Icon size={19} strokeWidth={1.8} />
-                            </span>
+                    })}
+                </div>
 
-                            <span className={styles.menuText}>{item.name}</span>
-                        </button>
-                    );
-                })}
-            </div>
-
-            {/* Bottom Menu */}
-            <div className={styles.bottomSection}>
-                {bottomItems.map((item) => {
-                    const Icon = item.icon;
-
-                    return (
-                        <button
-                            key={item.name}
-                            className={styles.menuItem}
-                            onClick={() => setActiveItem(item.name)}
-                        >
-                            <span className={styles.activeLine}></span>
-
-                            <span className={styles.iconBox}>
-                                <Icon size={19} strokeWidth={1.8} />
-                            </span>
-
-                            <span className={styles.menuText}>{item.name}</span>
-                        </button>
-                    );
-                })}
-
-                {/* Friend Chat */}
-                <div className={styles.chatCard}>
-                    <div className={styles.chatContent}>
-                        <MessageCircle
-                            size={19}
-                            strokeWidth={1.7}
-                            className={styles.chatIcon}
-                        />
-
-                        <span>
-                            Friend chat
-                            <br />
-                            and Groups
-                        </span>
-                    </div>
-
-                    <button className={styles.plusButton}>
-                        <Plus size={20} strokeWidth={1.7} />
-                    </button>
+                <div className={styles.sideTwo}>
+                    {bottomItems.map((item, index) => {
+                        const Icon = item.icon
+                        return (
+                            <div key={index} className={styles.sidePages}>
+                                <Icon className={styles.sideIcons} />
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </aside>

@@ -1,256 +1,59 @@
 .sidebar {
-    width: 230px;
-    min-height: 650px;
-    padding: 40px 25px 34px 40px;
     display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.sideWidth {
+    width: 75px;
+    background: white;
+    min-height: 600px;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    border-radius: 50px;
 }
 
-
-.menuSection {
+/* Home */
+.sideOne {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-
-.menuItem {
-    position: relative;
-    width: 100%;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    border: none;
-    outline: none;
-    background: transparent;
-    color: #eeeeee;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    transition:
-        color 0.25s ease,
-        transform 0.25s ease;
-}
-
-
-.menuItem:hover {
-    color: #ffffff;
-    transform: translateX(2px);
-}
-
-
-.activeLine {
-    position: absolute;
-    left: -22px;
-    top: 7px;
-    width: 4px;
-    height: 24px;
-    border-radius: 0 4px 4px 0;
-    background: transparent;
-    transition:
-        background 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-
-.active .activeLine {
-    background: #ff713c;
-    box-shadow:
-        0 0 8px rgba(255, 113, 60, 0.35);
-}
-
-
-
-.iconBox {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    color: #bfc0c4;
-    border-radius: 8px;
-    transition:
-        color 0.25s ease,
-        background 0.25s ease;
-}
-
-
-.active .iconBox {
-    color: #ff713c;
-
-    background: rgba(255, 103, 52, 0.13);
-
-    box-shadow:
-        inset 0 0 12px rgba(255, 103, 52, 0.06);
-}
-
-
-.menuItem:hover .iconBox {
-    color: #ffffff;
-}
-
-
-.menuText {
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.1px;
-    white-space: nowrap;
-}
-
-
-.active .menuText {
-    color: #ff7948;
-    font-weight: 500;
-}
-
-
-/* =========================
-   BOTTOM SECTION
-========================= */
-
-.bottomSection {
-    display: flex;
+    align-items: center;
     flex-direction: column;
-
-    gap: 10px;
+    gap: 18px;
 }
 
 
-.chatCard {
-    width: 100%;
-    min-height: 85px;
-
-    margin-top: 60px;
-    padding: 16px 13px;
-    box-sizing: border-box;
+.sidePages {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 15px;
-    border: 1px solid rgba(116, 125, 145, 0.16);
-    background:
-        linear-gradient(145deg,
-            rgba(30, 31, 42, 0.9),
-            rgba(25, 27, 36, 0.8));
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.02);
-
-    transition:
-        border-color 0.25s ease,
-        background 0.25s ease;
-}
-
-
-.chatCard:hover {
-    border-color: rgba(255, 112, 63, 0.25);
-
-    background:
-        linear-gradient(145deg,
-            rgba(36, 32, 40, 0.95),
-            rgba(25, 27, 36, 0.9));
-}
-
-
-.chatContent {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    color: #eeeeee;
-
-    font-size: 12px;
-    line-height: 17px;
-}
-
-
-.chatIcon {
-    color: #aeb2ba;
-}
-
-
-/* =========================
-   PLUS BUTTON
-========================= */
-
-.plusButton {
-    width: 30px;
-    height: 30px;
-
-    padding: 0;
-
-    display: flex;
-    align-items: center;
     justify-content: center;
-
-    border: none;
-    background: transparent;
-
-    color: #eeeeee;
-
+    align-items: center;
+    border-radius: 50%;
     cursor: pointer;
+}
 
-    transition:
-        color 0.2s ease,
-        transform 0.2s ease;
+.sideIcons {
+    width: 25px;
+    height: 25px;
 }
 
 
-.plusButton:hover {
-    color: #ff713c;
-    transform: scale(1.08);
-}
 
 
-@media (max-width: 768px) {
-    .sidebar {
-        width: 210px;
-        padding-left: 22px;
-        padding-right: 20px;
-    }
-}
-
-
-@media (max-width: 576px) {
-    .sidebar {
-        width: 75px;
-        padding: 30px 15px;
-    }
-
-    .menuText {
-        display: none;
-    }
-
-    .iconBox {
-        margin: 0 auto;
-    }
-
-    .activeLine {
-        left: -15px;
-    }
-
-    .chatCard {
-        width: 45px;
-        height: 45px;
-        min-height: 45px;
-
-        margin-top: 40px;
-        padding: 0;
-
-        justify-content: center;
-    }
-
-    .chatContent span {
-        display: none;
-    }
-
-    .chatIcon {
-        display: none;
-    }
-
-    .plusButton {
-        display: flex;
-    }
+/* bottom */
+.sideTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
 }

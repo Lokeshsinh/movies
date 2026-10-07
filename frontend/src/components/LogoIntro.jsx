@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./LogoIntro.module.css";
-import logos from '../assets/profile/logos.png'
+import logos from "../assets/profile/logos.png";
 
 function LogoIntro() {
     const [showIntro, setShowIntro] = useState(true);
@@ -18,9 +18,7 @@ function LogoIntro() {
     return (
         <div className={styles.intro}>
             <div className={styles.background}></div>
-
             <div className={styles.overlay}></div>
-
             <div className={styles.logoContainer}>
                 <img
                     src={logos}
