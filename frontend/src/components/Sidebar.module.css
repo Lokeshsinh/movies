@@ -11,15 +11,39 @@
     min-height: 600px;
     padding: 30px 0 30px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
     border-radius: 50px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    white-space: nowrap;
 }
 
+.sideWidth:hover {
+    width: 250px;
+}
+
+
+
 /* Home */
+
+.sideFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sideButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
 .sideOne {
     display: flex;
     justify-content: center;
@@ -39,6 +63,10 @@
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
+    transition:
+        width 0.35s ease,
+        opacity 0.25s ease,
+        margin-left 0.35s ease;
 }
 
 .sideIcons {
@@ -46,6 +74,39 @@
     height: 25px;
 }
 
+.sidePages:hover {
+    background: transparent;
+    color: black;
+}
+
+
+.sideText {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 0;
+    font-size: 17px;
+    font-weight: 550;
+    transition:
+        width 0.35s ease,
+        opacity 0.25s ease,
+        margin-left 0.35s ease;
+    display: none;
+}
+
+.linkPath{
+    text-decoration: none;
+}
+.sideWidth:hover .sideText {
+    width: 100px;
+    opacity: 1;
+    margin-left: 15px;
+    display: block;
+    color: black;
+
+
+}
 
 
 
