@@ -6,7 +6,7 @@
 }
 
 .sideWidth {
-    width: 75px;
+    width: 250px;
     background: white;
     min-height: 600px;
     padding: 30px 0 30px 0;
@@ -21,10 +21,6 @@
     white-space: nowrap;
 }
 
-.sideWidth:hover {
-    width: 250px;
-}
-
 
 
 /* Home */
@@ -34,6 +30,24 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.sideFlex:hover {
+    padding: 5px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    transform: translateY(-3px)
+}
+
+.active {
+    padding: 5px;
+    background: black;
+    color: white;
+    border-radius: 20px;
 }
 
 .sideButton {
@@ -69,6 +83,11 @@
         margin-left 0.35s ease;
 }
 
+.sideFlex:hover .sidePages {
+    color: white;
+
+}
+
 .sideIcons {
     width: 25px;
     height: 25px;
@@ -81,32 +100,41 @@
 
 
 .sideText {
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
+    width: 80px;
     white-space: nowrap;
-    margin-left: 0;
     font-size: 17px;
     font-weight: 550;
     transition:
         width 0.35s ease,
         opacity 0.25s ease,
         margin-left 0.35s ease;
-    display: none;
-}
-
-.linkPath{
-    text-decoration: none;
-}
-.sideWidth:hover .sideText {
-    width: 100px;
-    opacity: 1;
     margin-left: 15px;
     display: block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.sideFlex:hover .sideText {
+    color: white;
+}
+
+.active .sideText {
+    color: white;
+}
+
+.linkPath {
+    text-decoration: none;
+    color: none;
+}
+
+/* 
+.sideWidth:hover .sideText {
+    width: 100px;
     color: black;
 
 
-}
+} */
 
 
 

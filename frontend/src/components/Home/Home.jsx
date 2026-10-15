@@ -1,10 +1,10 @@
 import React from 'react'
-
+import HomeSlide from './HomeSlide'
 
 function Home() {
     return (
         <>
-            <h1>Home</h1>
+            <HomeSlide />
         </>
     );
 }

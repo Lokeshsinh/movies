@@ -54,6 +54,9 @@ function Sidebar() {
             icon: CircleHelp,
         },
     ];
+    const handlerActive = (name) => {
+        setActiveItem(name)
+    }
 
     return (
         <>
@@ -64,7 +67,9 @@ function Sidebar() {
                         {menuItems.map((item, index) => {
                             const Icon = item.icon
                             return (
-                                <div key={index} className={styles.sideFlex} >
+                                <div key={index} className={`${styles.sideFlex} ${activeItem === item.name ? styles.active : ""}`}
+                                    onClick={() => handlerActive(item.name)}
+                                >
                                     <Link className={styles.linkPath} to={item.path}><div className={styles.sideButton}>
                                         <div className={styles.sidePages}><Icon className={styles.sideIcons} /></div>
                                         <span className={styles.sideText}>{item.name}</span>
