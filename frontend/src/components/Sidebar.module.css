@@ -2,7 +2,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 20px 30px;
+    padding: 20px 30px 20px 10px;
 }
 
 .sideWidth {
@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
     justify-content: space-between;
     box-sizing: border-box;
     border-radius: 50px;
@@ -54,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     cursor: pointer;
 }
 
@@ -63,7 +64,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 18px;
+    gap: 23px;
 }
 
 
